@@ -1,13 +1,19 @@
-import React from "react";
+import Head from "next/head";
 import Navbar from "./Navbar";
 
-const Layout = ({ children }) => {
+export default function Layout({ title, keywords, description, children }) {
   return (
-    <>
-      <Navbar />
-      <div>{children}</div>
-    </>
-  );
-};
+    <div>
+      <Head>
+        <title>{title}</title>
+        <meta name="description" content={description} />
+        <meta name="keywords" content={keywords} />
+      </Head>
 
-export default Layout;
+      <Navbar />
+
+      <div className="container mt-4">{children}</div>
+      {/* <Footer /> */}
+    </div>
+  );
+}
