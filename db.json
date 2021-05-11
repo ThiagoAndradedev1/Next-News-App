@@ -1,0 +1,25 @@
+{
+  "noticias": [
+    {
+      "id": 1,
+      "titulo": "Test1",
+      "data": "24/02/11",
+      "descricao": "Hello World",
+      "autor": "John"
+    },
+    {
+      "id": 2,
+      "titulo": "Test2",
+      "data": "25/02/11",
+      "descricao": "Hello World2",
+      "autor": "Paulo"
+    },
+    {
+      "id": 3,
+      "titulo": "Test3",
+      "data": "26/02/11",
+      "descricao": "Hello World3",
+      "autor": "Mario"
+    }
+  ]
+}
