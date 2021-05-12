@@ -1,11 +1,12 @@
 import React from "react";
 import Link from "next/link";
-import { ArrowRight } from "react-bootstrap-icons";
+
+import { GeoAltFill, Calendar } from "react-bootstrap-icons";
 
 const NewsItem = ({ newsItem }) => {
   return (
     <div>
-      <Link href={`/guides/${newsItem.id}`}>
+      <Link href={`/news/${newsItem.id}`}>
         <a>
           <div className="col">
             <div
@@ -17,27 +18,31 @@ const NewsItem = ({ newsItem }) => {
               }}
             >
               <div className="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                <h2 className="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                <h2 className="pt-5 mt-5 mb-5 display-6 lh-1 fw-bold box-shadow">
                   {newsItem.titulo}
                 </h2>
 
-                <ul class="d-flex list-unstyled mt-auto">
-                  <li class="me-auto">
+                <ul className="d-flex list-unstyled mt-auto">
+                  <li className="me-auto">
                     <img
-                      src="https://github.com/twbs.png"
+                      src={newsItem.autorImg}
                       alt="Bootstrap"
                       width="32"
                       height="32"
-                      class="rounded-circle border border-white"
+                      className="rounded-circle border border-white"
                     />
                   </li>
-                  <li class="d-flex align-items-center me-3">
-                    <ArrowRight color="royalblue" />
-                    <small>Earth</small>
+                  <li className="d-flex align-items-center me-3">
+                    <GeoAltFill />
+                    <small className="box-shadow-date pl-5 spacing-location">
+                      {newsItem.location}
+                    </small>
                   </li>
-                  <li class="d-flex align-items-center">
-                    <ArrowRight color="royalblue" />
-                    <small>3d</small>
+                  <li className="d-flex align-items-center">
+                    <Calendar />
+                    <small className="box-shadow-date pl-5 spacing-calendar">
+                      {newsItem.data}
+                    </small>
                   </li>
                 </ul>
               </div>
