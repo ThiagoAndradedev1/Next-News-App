@@ -1,5 +1,7 @@
 <h3 align="center">Next News App</h3>
 
+![Novo Projeto](https://user-images.githubusercontent.com/63686057/118008155-34714d80-b323-11eb-8a47-75973ca7ff6a.jpg)
+
 ---
 
 <p align="center"> Projeto realizado utilizando as ferramentas do Next.Js
