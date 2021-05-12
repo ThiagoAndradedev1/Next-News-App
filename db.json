@@ -8,7 +8,8 @@
       "autor": "John Paulo",
       "autorImg": "/images/johnpaulo.jpg",
       "img": "/images/gamerroom.jpg",
-      "location": "New York"
+      "location": "New York",
+      "isDestaque": false
     },
     {
       "id": 2,
@@ -18,7 +19,8 @@
       "autor": "Paulo Andrade",
       "autorImg": "/images/pauloandrade.jpg",
       "img": "/images/tech.jpg",
-      "location": "Rio de Janeiro"
+      "location": "Rio de Janeiro",
+      "isDestaque": false
     },
     {
       "id": 3,
@@ -28,7 +30,8 @@
       "autor": "Mario Luiz",
       "autorImg": "/images/marioluiz.jpg",
       "img": "/images/mario.jpg",
-      "location": "São Paulo"
+      "location": "São Paulo",
+      "isDestaque": false
     },
     {
       "id": 4,
@@ -38,7 +41,8 @@
       "autor": "Mario Luiz",
       "autorImg": "/images/johnpaulo.jpg",
       "img": "/images/gamer.jpg",
-      "location": "Berlin"
+      "location": "Berlin",
+      "isDestaque": false
     },
     {
       "id": 5,
@@ -48,7 +52,8 @@
       "autor": "Mario",
       "autorImg": "/images/johnpaulo.jpg",
       "img": "/images/fifa.jpg",
-      "location": "Minas Gerais"
+      "location": "Minas Gerais",
+      "isDestaque": false
     },
     {
       "id": 6,
@@ -58,7 +63,8 @@
       "autor": "Mario Luiz",
       "autorImg": "/images/marioluiz.jpg",
       "img": "/images/perifericos.jpg",
-      "location": "Londres"
+      "location": "Londres",
+      "isDestaque": false
     },
     {
       "id": 7,
@@ -68,7 +74,8 @@
       "autor": "John Paulo",
       "autorImg": "/images/johnpaulo.jpg",
       "img": "/images/outriders.560.webp",
-      "location": "Japan"
+      "location": "Japan",
+      "isDestaque": true
     },
     {
       "id": 8,
@@ -78,7 +85,8 @@
       "autor": "John Paulo",
       "autorImg": "/images/johnpaulo.jpg",
       "img": "/images/magnamalo.560.webp",
-      "location": "Japan"
+      "location": "Japan",
+      "isDestaque": true
     },
     {
       "id": 9,
@@ -88,7 +96,8 @@
       "autor": "John Paulo",
       "autorImg": "/images/johnpaulo.jpg",
       "img": "/images/keanu-reeves.560.webp",
-      "location": "Japan"
+      "location": "Japan",
+      "isDestaque": true
     },
     {
       "id": 10,
@@ -98,7 +107,8 @@
       "autor": "John Paulo",
       "autorImg": "/images/johnpaulo.jpg",
       "img": "/images/demon-slayer.560.webp",
-      "location": "Japan"
+      "location": "Japan",
+      "isDestaque": true
     },
     {
       "id": 11,
@@ -108,7 +118,8 @@
       "autor": "John Paulo",
       "autorImg": "/images/johnpaulo.jpg",
       "img": "/images/cyber.jpg",
-      "location": "Japan"
+      "location": "Japan",
+      "isDestaque": false
     }
   ]
 }
