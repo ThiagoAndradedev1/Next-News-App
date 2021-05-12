@@ -24,12 +24,6 @@ const Navbar = () => {
                 <a className="nav-link px-2 text-white">Notícias</a>
               </Link>
             </li>
-
-            <li>
-              <Link href="/news/11">
-                <a className="nav-link px-2 text-white">Destaque</a>
-              </Link>
-            </li>
           </ul>
           <div className="text-end">
             <Link href="/news">
