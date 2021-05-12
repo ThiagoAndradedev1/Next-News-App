@@ -1,0 +1,285 @@
+.cybr_btn {
+  --primary: hsl(
+    var(--primary-hue),
+    85%,
+    calc(var(--primary-lightness, 50) * 1%)
+  );
+  --shadow-primary: hsl(var(--shadow-primary-hue), 90%, 50%);
+  --shadow-primary-alpha: hsla(var(--shadow-primary-hue), 90%, 50%, 0.5);
+  --shadow-secondary: hsl(var(--shadow-secondary-hue), 90%, 60%);
+  font-family: "Cyber", sans-serif;
+  position: relative;
+  text-transform: uppercase;
+  background: var(--primary);
+  font-size: var(--font-size);
+  outline: transparent;
+  border: 0;
+  min-width: 300px;
+  padding: 32px 64px;
+  box-shadow: -2px 0 1px 0px inset var(--shadow-primary);
+  transition: background 0.1s ease;
+}
+.cybr_btn *,
+.cybr_btn *:after {
+  outline: transparent;
+}
+.cybr_btn:hover .cybr_btn__text:after,
+.cybr_btn:hover .cybr_btn__glitch:after {
+  display: block;
+}
+.cybr_btn:hover {
+  --primary-lightness: 40;
+}
+.cybr_btn:active {
+  --primary-lightness: 30;
+}
+.cybr_btn__glitch {
+  height: 100%;
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: drop-shadow(-2px 2px var(--shadow-primary))
+    drop-shadow(-1px -1px var(--shadow-primary-alpha))
+    drop-shadow(2px 2px var(--shadow-primary));
+}
+.cybr_btn__glitch:after {
+  display: none;
+  background: var(--primary);
+  animation: shimmy-text 2s infinite alternate ease-in-out;
+  content: "";
+  height: 98%;
+  width: 98%;
+  position: absolute;
+  top: 1%;
+  left: 1%;
+}
+.cybr_btn__text {
+  color: var(--color);
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  white-space: nowrap;
+}
+.cybr_btn__text:after {
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  content: attr(data-text);
+  color: var(--color);
+  filter: brightness(1);
+  animation: shimmy-text 2s infinite alternate ease-in-out;
+  text-shadow: 2px 2px var(--shadow-primary), -2px -2px var(--shadow-secondary);
+}
+.cybr_btn:after {
+  content: "R25";
+  position: absolute;
+  padding: 10px;
+  letter-spacing: 1px;
+  padding: 1px 4px;
+  line-height: 1;
+  bottom: -5%;
+  right: 5%;
+  background: var(--shadow-secondary);
+  color: var(--black);
+  font-size: var(--label-size);
+  box-shadow: 2px 0 1px 0 inset var(--shadow-primary);
+}
+@-moz-keyframes shimmy-text {
+  2%,
+  8% {
+    transform: translate(calc(var(--shimmy-distance) * -1%), 0);
+  }
+  6% {
+    transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+  }
+  9% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+  }
+  13% {
+    transform: translate(0, 0);
+  }
+  14%,
+  21% {
+    transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+  }
+  15%,
+  20% {
+    transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+  }
+  25% {
+    transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+  }
+  30% {
+    transform: translate(calc(var(--shimmy-distance) * -1%), 0);
+  }
+  35%,
+  45% {
+    transform: translate(calc(var(--shimmy-distance) * -1%));
+  }
+  40% {
+    transform: translate(calc(var(--shimmy-distance) * 1%));
+  }
+  50% {
+    transform: translate(0, 0);
+  }
+  55% {
+    transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+  }
+  60% {
+    transform: translate(0, 0);
+  }
+}
+@-webkit-keyframes shimmy-text {
+  2%,
+  8% {
+    transform: translate(calc(var(--shimmy-distance) * -1%), 0);
+  }
+  6% {
+    transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+  }
+  9% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+  }
+  13% {
+    transform: translate(0, 0);
+  }
+  14%,
+  21% {
+    transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+  }
+  15%,
+  20% {
+    transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+  }
+  25% {
+    transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+  }
+  30% {
+    transform: translate(calc(var(--shimmy-distance) * -1%), 0);
+  }
+  35%,
+  45% {
+    transform: translate(calc(var(--shimmy-distance) * -1%));
+  }
+  40% {
+    transform: translate(calc(var(--shimmy-distance) * 1%));
+  }
+  50% {
+    transform: translate(0, 0);
+  }
+  55% {
+    transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+  }
+  60% {
+    transform: translate(0, 0);
+  }
+}
+@-o-keyframes shimmy-text {
+  2%,
+  8% {
+    transform: translate(calc(var(--shimmy-distance) * -1%), 0);
+  }
+  6% {
+    transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+  }
+  9% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+  }
+  13% {
+    transform: translate(0, 0);
+  }
+  14%,
+  21% {
+    transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+  }
+  15%,
+  20% {
+    transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+  }
+  25% {
+    transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+  }
+  30% {
+    transform: translate(calc(var(--shimmy-distance) * -1%), 0);
+  }
+  35%,
+  45% {
+    transform: translate(calc(var(--shimmy-distance) * -1%));
+  }
+  40% {
+    transform: translate(calc(var(--shimmy-distance) * 1%));
+  }
+  50% {
+    transform: translate(0, 0);
+  }
+  55% {
+    transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+  }
+  60% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes shimmy-text {
+  2%,
+  8% {
+    transform: translate(calc(var(--shimmy-distance) * -1%), 0);
+  }
+  6% {
+    transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+  }
+  9% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+  }
+  13% {
+    transform: translate(0, 0);
+  }
+  14%,
+  21% {
+    transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+  }
+  15%,
+  20% {
+    transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+  }
+  25% {
+    transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+  }
+  30% {
+    transform: translate(calc(var(--shimmy-distance) * -1%), 0);
+  }
+  35%,
+  45% {
+    transform: translate(calc(var(--shimmy-distance) * -1%));
+  }
+  40% {
+    transform: translate(calc(var(--shimmy-distance) * 1%));
+  }
+  50% {
+    transform: translate(0, 0);
+  }
+  55% {
+    transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+  }
+  60% {
+    transform: translate(0, 0);
+  }
+}
