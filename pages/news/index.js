@@ -19,7 +19,9 @@ export const getStaticProps = async () => {
 const News = ({ news }) => {
   return (
     <Layout title="Next News - Todas noticias">
-      <h1 className="border-b pt-2 pb-2">Todas as notícias</h1>
+      <div className="text-center">
+        <h1 className="border-b pt-2 pb-2">Todas as notícias</h1>
+      </div>
       <NewsList news={news} />
     </Layout>
   );

@@ -1,6 +1,8 @@
 import React from "react";
 import Link from "next/link";
 
+import { Newspaper } from "react-bootstrap-icons";
+
 const Navbar = () => {
   return (
     <header className="p-3 text-white navbar-dark bg-dark">
@@ -31,7 +33,9 @@ const Navbar = () => {
           </ul>
           <div className="text-end">
             <Link href="/news">
-              <a className="btn btn-secondary">Últimas Notícias</a>
+              <a className="btn btn-secondary">
+                <Newspaper className="icon-alignment" /> Últimas Notícias
+              </a>
             </Link>
           </div>
         </div>

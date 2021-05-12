@@ -9,7 +9,9 @@ const Highlights = () => {
     <div>
       <>
         <div className="section_title">
-          <h1 className="text-center mb-5">Notícias em Destaque</h1>
+          <div className="text-center">
+            <h1 className="border-b pt-2 pb-2 mb-5"> Notícias em Destaque</h1>
+          </div>
         </div>
 
         <div className="row row-cols-1 row-cols-md-4 g-4">
