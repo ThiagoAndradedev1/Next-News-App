@@ -1,10 +1,13 @@
+import Layout from "@components/Layout";
 import React from "react";
 
 const NotFound = () => {
   return (
-    <div>
-      <h1>Ooooppsss...not found!</h1>
-    </div>
+    <Layout title="Not Found" description="Not Found">
+      <div>
+        <h1 className="text-center mt-5">Ooooppsss... Not found!</h1>
+      </div>
+    </Layout>
   );
 };
 
