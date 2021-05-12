@@ -1,7 +1,8 @@
 import Head from "next/head";
+
 import Navbar from "./Navbar";
 
-export default function Layout({ title, keywords, description, children }) {
+const Layout = ({ title, keywords, description, children }) => {
   return (
     <div>
       <Head>
@@ -9,11 +10,10 @@ export default function Layout({ title, keywords, description, children }) {
         <meta name="description" content={description} />
         <meta name="keywords" content={keywords} />
       </Head>
-
       <Navbar />
-
-      <div className="container mt-4">{children}</div>
-      {/* <Footer /> */}
+      <div className="container mt-2">{children}</div>
     </div>
   );
-}
+};
+
+export default Layout;

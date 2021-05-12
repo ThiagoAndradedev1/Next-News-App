@@ -1,57 +1,45 @@
-import Layout from "@components/Layout";
-import { server } from "../config";
+import Image from "next/image";
+import Link from "next/link";
 
-export default function Home({ articles }) {
+import Layout from "@components/Layout";
+import Highlights from "@components/Highlights";
+import ButtonGlitch from "@components/ButtonGlitch";
+
+export default function Home() {
   return (
     <Layout title="Next News" description="Next News">
-      <div class="container col-xxl-8 px-4 py-5">
-        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-          <div class="col-10 col-sm-8 col-lg-6">
-            <img
-              src="https://getbootstrap.com/docs/5.0/examples/heroes/bootstrap-themes.png"
-              class="d-block mx-lg-auto img-fluid"
+      <div className="container col-xxl-8 px-4">
+        <div className="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div className="col-10 col-sm-8 col-lg-6">
+            <Image
+              src="/images/home_cyberpunk.png"
+              className="d-block mx-lg-auto img-fluid"
               alt="Bootstrap Themes"
-              width="700"
-              height="500"
-              loading="lazy"
+              width="426"
+              height="600"
             />
           </div>
-          <div class="col-lg-6">
-            <h1 class="display-5 fw-bold lh-1 mb-3">
-              Responsive left-aligned hero with image
-            </h1>
-            <p class="lead">
-              Quickly design and customize responsive mobile-first sites with
-              Bootstrap, the world’s most popular front-end open source toolkit,
-              featuring Sass variables and mixins, responsive grid system,
-              extensive prebuilt components, and powerful JavaScript plugins.
+          <div className="col-lg-6">
+            <h1 className="display-5 fw-bold lh-1 mb-3">Cyberpunk 2077</h1>
+            <p className="lead">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+              dolor corporis dolorum quae quod atque dolores. A est natus
+              incidunt nihil? Aut voluptatum, accusamus pariatur quaerat fugiat
+              dicta reiciendis explicabo.
             </p>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">
-                Primary
-              </button>
-              <button
-                type="button"
-                class="btn btn-outline-secondary btn-lg px-4"
-              >
-                Default
-              </button>
+            <div className="d-grid gap-2 d-md-flex justify-content-md-start">
+              <Link href={`/news/11`}>
+                <a>
+                  <ButtonGlitch title="Confira" />
+                </a>
+              </Link>
             </div>
           </div>
         </div>
+        <div className="mb-5">
+          <Highlights />
+        </div>
       </div>
-      {/* <ArticleList articles={articles} /> */}
     </Layout>
   );
 }
-
-export const getStaticProps = async () => {
-  const res = await fetch(`${server}/noticias`);
-  const articles = await res.json();
-
-  return {
-    props: {
-      articles,
-    },
-  };
-};
