@@ -5,7 +5,7 @@ import Layout from "@components/Layout";
 import Highlights from "@components/Highlights";
 import ButtonGlitch from "@components/ButtonGlitch";
 
-export default function Home() {
+const Home = () => {
   return (
     <Layout title="Next News" description="Next News">
       <div className="container col-xxl-8 px-4">
@@ -42,4 +42,6 @@ export default function Home() {
       </div>
     </Layout>
   );
-}
+};
+
+export default Home;
