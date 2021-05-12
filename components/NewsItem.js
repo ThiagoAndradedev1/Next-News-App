@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 import { GeoAltFill, Calendar } from "react-bootstrap-icons";
 
@@ -24,7 +25,7 @@ const NewsItem = ({ newsItem }) => {
 
                 <ul className="d-flex list-unstyled mt-auto">
                   <li className="me-auto">
-                    <img
+                    <Image
                       src={newsItem.autorImg}
                       alt="Bootstrap"
                       width="32"
