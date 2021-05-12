@@ -2,27 +2,113 @@
   "noticias": [
     {
       "id": 1,
-      "titulo": "Test1",
-      "data": "24/02/11",
-      "descricao": "Hello World",
-      "autor": "John",
-      "img": "https://images.unsplash.com/photo-1562797807-aa9baed9a414?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=376&q=80"
+      "titulo": "Confira os últimos lançamentos",
+      "data": "5d",
+      "descricao": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti delectus quam doloremque dolor voluptate commodi veritatis nemo. Magnam soluta et dolorum quasi, saepe asperiores neque cupiditate, sit repudiandae, dolores consequatur, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti delectus quam doloremque dolor voluptate commodi veritatis nemo. Magnam soluta et dolorum quasi, saepe asperiores neque cupiditate, sit repudiandae, dolores consequatur.",
+      "autor": "John Paulo",
+      "autorImg": "/images/johnpaulo.jpg",
+      "img": "/images/gamerroom.jpg",
+      "location": "New York"
     },
     {
       "id": 2,
-      "titulo": "Test2",
-      "data": "25/02/11",
-      "descricao": "Hello World2",
-      "autor": "Paulo",
-      "img": "https://images.unsplash.com/photo-1562797807-aa9baed9a414?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=376&q=80"
+      "titulo": "Evento de tecnologia no Rio",
+      "data": "3d",
+      "descricao": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti delectus quam doloremque dolor voluptate commodi veritatis nemo. Magnam soluta et dolorum quasi, saepe asperiores neque cupiditate, sit repudiandae, dolores consequatur, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti delectus quam doloremque dolor voluptate commodi veritatis nemo. Magnam soluta et dolorum quasi, saepe asperiores neque cupiditate, sit repudiandae, dolores consequatur.",
+      "autor": "Paulo Andrade",
+      "autorImg": "/images/pauloandrade.jpg",
+      "img": "/images/tech.jpg",
+      "location": "Rio de Janeiro"
     },
     {
       "id": 3,
-      "titulo": "Test3",
-      "data": "26/02/11",
-      "descricao": "Hello World3",
+      "titulo": "Começa hoje a BGS São Paulo",
+      "data": "7d",
+      "descricao": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti delectus quam doloremque dolor voluptate commodi veritatis nemo. Magnam soluta et dolorum quasi, saepe asperiores neque cupiditate, sit repudiandae, dolores consequatur, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti delectus quam doloremque dolor voluptate commodi veritatis nemo. Magnam soluta et dolorum quasi, saepe asperiores neque cupiditate, sit repudiandae, dolores consequatur.",
+      "autor": "Mario Luiz",
+      "autorImg": "/images/marioluiz.jpg",
+      "img": "/images/mario.jpg",
+      "location": "São Paulo"
+    },
+    {
+      "id": 4,
+      "titulo": "Major de CS:GO começa hoje",
+      "data": "7d",
+      "descricao": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti delectus quam doloremque dolor voluptate commodi veritatis nemo. Magnam soluta et dolorum quasi, saepe asperiores neque cupiditate, sit repudiandae, dolores consequatur, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti delectus quam doloremque dolor voluptate commodi veritatis nemo. Magnam soluta et dolorum quasi, saepe asperiores neque cupiditate, sit repudiandae, dolores consequatur.",
+      "autor": "Mario Luiz",
+      "autorImg": "/images/johnpaulo.jpg",
+      "img": "/images/gamer.jpg",
+      "location": "Berlin"
+    },
+    {
+      "id": 5,
+      "titulo": "Conheça os melhores do FIFA",
+      "data": "7d",
+      "descricao": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti delectus quam doloremque dolor voluptate commodi veritatis nemo. Magnam soluta et dolorum quasi, saepe asperiores neque cupiditate, sit repudiandae, dolores consequatur, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti delectus quam doloremque dolor voluptate commodi veritatis nemo. Magnam soluta et dolorum quasi, saepe asperiores neque cupiditate, sit repudiandae, dolores consequatur.",
       "autor": "Mario",
-      "img": "https://images.unsplash.com/photo-1562797807-aa9baed9a414?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=376&q=80"
+      "autorImg": "/images/johnpaulo.jpg",
+      "img": "/images/fifa.jpg",
+      "location": "Minas Gerais"
+    },
+    {
+      "id": 6,
+      "titulo": "Os melhores perifericos da geração",
+      "data": "7d",
+      "descricao": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti delectus quam doloremque dolor voluptate commodi veritatis nemo. Magnam soluta et dolorum quasi, saepe asperiores neque cupiditate, sit repudiandae, dolores consequatur, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti delectus quam doloremque dolor voluptate commodi veritatis nemo. Magnam soluta et dolorum quasi, saepe asperiores neque cupiditate, sit repudiandae, dolores consequatur.",
+      "autor": "Mario Luiz",
+      "autorImg": "/images/marioluiz.jpg",
+      "img": "/images/perifericos.jpg",
+      "location": "Londres"
+    },
+    {
+      "id": 7,
+      "titulo": "The New Monster Game",
+      "data": "3d",
+      "descricao": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti delectus quam doloremque dolor voluptate commodi veritatis nemo. Magnam soluta et dolorum quasi, saepe asperiores neque cupiditate, sit repudiandae, dolores consequatur, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti delectus quam doloremque dolor voluptate commodi veritatis nemo. Magnam soluta et dolorum quasi, saepe asperiores neque cupiditate, sit repudiandae, dolores consequatur.",
+      "autor": "John Paulo",
+      "autorImg": "/images/johnpaulo.jpg",
+      "img": "/images/outriders.560.webp",
+      "location": "Japan"
+    },
+    {
+      "id": 8,
+      "titulo": "Monster Hunter Rise Game",
+      "data": "1d",
+      "descricao": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti delectus quam doloremque dolor voluptate commodi veritatis nemo. Magnam soluta et dolorum quasi, saepe asperiores neque cupiditate, sit repudiandae, dolores consequatur, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti delectus quam doloremque dolor voluptate commodi veritatis nemo. Magnam soluta et dolorum quasi, saepe asperiores neque cupiditate, sit repudiandae, dolores consequatur.",
+      "autor": "John Paulo",
+      "autorImg": "/images/johnpaulo.jpg",
+      "img": "/images/magnamalo.560.webp",
+      "location": "Japan"
+    },
+    {
+      "id": 9,
+      "titulo": "The New Samurai Game",
+      "data": "8d",
+      "descricao": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti delectus quam doloremque dolor voluptate commodi veritatis nemo. Magnam soluta et dolorum quasi, saepe asperiores neque cupiditate, sit repudiandae, dolores consequatur, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti delectus quam doloremque dolor voluptate commodi veritatis nemo. Magnam soluta et dolorum quasi, saepe asperiores neque cupiditate, sit repudiandae, dolores consequatur.",
+      "autor": "John Paulo",
+      "autorImg": "/images/johnpaulo.jpg",
+      "img": "/images/keanu-reeves.560.webp",
+      "location": "Japan"
+    },
+    {
+      "id": 10,
+      "titulo": "Kimetsu no Yaiba New Game",
+      "data": "5d",
+      "descricao": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti delectus quam doloremque dolor voluptate commodi veritatis nemo. Magnam soluta et dolorum quasi, saepe asperiores neque cupiditate, sit repudiandae, dolores consequatur, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti delectus quam doloremque dolor voluptate commodi veritatis nemo. Magnam soluta et dolorum quasi, saepe asperiores neque cupiditate, sit repudiandae, dolores consequatur.",
+      "autor": "John Paulo",
+      "autorImg": "/images/johnpaulo.jpg",
+      "img": "/images/demon-slayer.560.webp",
+      "location": "Japan"
+    },
+    {
+      "id": 11,
+      "titulo": "Cyberpunk 2077 Game Release",
+      "data": "5d",
+      "descricao": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti delectus quam doloremque dolor voluptate commodi veritatis nemo. Magnam soluta et dolorum quasi, saepe asperiores neque cupiditate, sit repudiandae, dolores consequatur, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti delectus quam doloremque dolor voluptate commodi veritatis nemo. Magnam soluta et dolorum quasi, saepe asperiores neque cupiditate, sit repudiandae, dolores consequatur.",
+      "autor": "John Paulo",
+      "autorImg": "/images/johnpaulo.jpg",
+      "img": "/images/cyber.jpg",
+      "location": "Japan"
     }
   ]
 }
