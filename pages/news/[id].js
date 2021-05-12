@@ -11,7 +11,7 @@ const Article = ({ article }) => {
     <>
       <Layout title="Next News" description="Next News">
         <div className="container col-xxl-8 px-4 pb-5">
-          {article.titulo === "Cyberpunk 2077 Game Release" && (
+          {article.isDestaque && (
             <div className="text-center">
               <h1 className="border-b pt-2 pb-2 mb-2">Em Destaque</h1>
             </div>
@@ -20,11 +20,9 @@ const Article = ({ article }) => {
             <div className="col-12 col-md-6">
               <Image
                 src={article.img}
-                className="img-fluid"
                 alt="articleimg"
-                layout="responsive"
-                width="800"
-                height="800"
+                width={article.isDestaque ? 433 : 800}
+                height={article.isDestaque ? 720 : 800}
               />
             </div>
             <div className="col-lg-6">
